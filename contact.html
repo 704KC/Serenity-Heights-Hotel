@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotel - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+    <!-- Include Google Maps API script -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script defer src="map.js"></script> <!-- JavaScript file for map functionality -->
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="room-listings.html">Rooms</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contact-info">
+        <h2>Contact Information</h2>
+        <address>
+            Luxury Hotel<br>
+            123 Main Street, City<br>
+            Phone: 123-456-7890<br>
+            Email: info@luxuryhotel.com
+        </address>
+    </section>
+    <section id="map">
+        <h2>Location</h2>
+        <div id="google-map"></div>
+    </section>
+    <section id="contact-form">
+        <h2>Send us a Message</h2>
+        <form action="submit-form.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+    <footer>
+        <!-- Include common footer content -->
+    </footer>
+</body>
+</html>
